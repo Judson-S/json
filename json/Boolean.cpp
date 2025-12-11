@@ -24,7 +24,7 @@ json::Data json::Boolean::print()
 
 json::Data json::Boolean::clone()
 {
-	
+	Data newBool = toData(this->_state);
 }
 
 bool& json::Boolean::getBoolean()

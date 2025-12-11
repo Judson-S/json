@@ -29,7 +29,6 @@ enable_testing()
 
 
 # Include sub-projects.
-add_subdirectory ("json_" "json_.cpp")
 
 add_subdirectory("json_test")
 

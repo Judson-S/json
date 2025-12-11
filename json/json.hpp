@@ -19,6 +19,22 @@ namespace json {
 	public:
 		TypeError(std::string message) : runtime_error(message) {}
 	};
+
+	Data toData(int data) {
+		Data obj = 
+	}
+	Data toData(double data) {
+
+	}
+	Data toData(bool data) {
+
+	}
+	Data toData(std::string data) {
+
+	}
+	Data toData(char const* data) {
+
+	}
 }
 
 class json::IData {
