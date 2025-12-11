@@ -58,7 +58,7 @@ double& json::IData::getNumber()
 	}
 }
 
-std::string json::IData::getString()
+std::string& json::IData::getString()
 {
 	try {
 		throw json::TypeError("This object is not a number");
@@ -68,7 +68,7 @@ std::string json::IData::getString()
 	}
 }
 
-json::DataVector json::IData::getArray()
+json::DataVector& json::IData::getArray()
 {
 	try {
 		throw json::TypeError("This object is not a number");
@@ -78,7 +78,7 @@ json::DataVector json::IData::getArray()
 	}
 }
 
-json::DataMap json::IData::getObject()
+json::DataMap& json::IData::getObject()
 {
 	try {
 		throw json::TypeError("This object is not a number");
