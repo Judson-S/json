@@ -1,12 +1,1 @@
-﻿# CMakeList.txt : CMake project for json, include source and define
-# project specific logic here.
-#
-
-# Add source to this project's executable.
-add_executable (json "json.cpp" "json.h")
-
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET json PROPERTY CXX_STANDARD 20)
-endif()
-
-# TODO: Add tests and install targets if needed.
+﻿add_library(json STATIC "json.cpp" "json.hpp" "Boolean.cpp" "Boolean.hpp" "Number.cpp" "Number.hpp" "String.cpp" "String.hpp" "Array.cpp" "Array.hpp" "Object.cpp" "Object.hpp")
