@@ -4,11 +4,11 @@ json::Null::Null() {
 	Data null = nullptr;
 }
 
-json::Data print()
+json::Null print()
 {
 	std::cout << "null";
 }
-json::Data clone()
+json::Null clone()
 {
 
 }

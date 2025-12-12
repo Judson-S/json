@@ -6,8 +6,8 @@ namespace json {
 	class Null : public IData {
 	public:
 		Null();
-		json::Data print();
-		json::Data clone();
+		json::Null print() override;
+		json::Null clone() override;
 	private:
 	};
 }

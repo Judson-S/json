@@ -8,7 +8,6 @@
 #include <memory>
 #include <iostream>
 #include <iomanip>
-#include "Null.hpp"
 namespace json {
 	class IData;
 	using Data = std::shared_ptr<IData>;
