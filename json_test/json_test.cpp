@@ -25,7 +25,7 @@ TEST(Print, CorrectOutput) {
 
 }
 
-TEST(Clone, CorrectValue) {
+TEST(Clone, CorrectValueClone) {
 
 }
 
