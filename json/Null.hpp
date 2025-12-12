@@ -3,8 +3,7 @@
 #include "json.hpp"
 
 namespace json {
-	class Null : public IData
-	{
+	class Null : public IData {
 	public:
 		Null();
 		json::Data print();
