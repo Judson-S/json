@@ -8,7 +8,7 @@
 #include <memory>
 #include <iostream>
 #include <iomanip>
-
+#include "Null.hpp"
 namespace json {
 	class IData;
 	using Data = std::shared_ptr<IData>;
@@ -20,20 +20,9 @@ namespace json {
 		TypeError(std::string message) : runtime_error(message) {}
 	};
 
-	Data toData(int data) {
-		Data obj = 
-	}
-	Data toData(double data) {
-
-	}
-	Data toData(bool data) {
-
-	}
-	Data toData(std::string data) {
-
-	}
-	Data toData(char const* data) {
-
+	Data toData() {
+		Null* null = new json::Null();
+		return (std::shared_ptr<IData>)null;
 	}
 }
 
@@ -60,6 +49,7 @@ public:
 	virtual json::DataMap& getObject();
 
 	//TODO: overload << operator, make clone logic, move on from there
+
 private:
 	
 };
