@@ -3,7 +3,7 @@
 namespace json {
 	class Array : public IData {
 	public:
-		Array() : _array{ } {}
+		Array() : _array{ nullptr } {}
 		Array(DataVector array) : _array{ array } {}
 		~Array();
 

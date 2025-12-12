@@ -20,10 +20,7 @@ namespace json {
 		TypeError(std::string message) : runtime_error(message) {}
 	};
 
-	Data toData() {
-		Null* null = new json::Null();
-		return (std::shared_ptr<IData>)null;
-	}
+	Data toData();
 }
 
 class json::IData {
