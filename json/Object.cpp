@@ -14,7 +14,15 @@ void json::Object::print(std::ostream& out)  const
 	out << "{";
 	for (auto i = _object.begin(); i != _object.end(); ++i)
 	{
-		out << quoted(i->first) << ":" << i->second;
+		if (i == prev(_object.end()))
+		{
+			out << quoted(i->first) << ":" << i->second;
+		}
+		else
+		{
+			out << quoted(i->first) << ":" << i->second << ",";
+		}
+		
 	}
 	out << "}";
 }

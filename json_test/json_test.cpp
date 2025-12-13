@@ -22,7 +22,7 @@ TEST(Constructor, CorrectValue) {
 }
 
 TEST(Print, CorrectOutput) {
-	std::ostringstream sout;
+	std::ostringstream sout("");
 	json::Number num = 7;
 	json::Data arr = json::toData(json::DataVector{
 	  json::toData(3.14),
@@ -38,8 +38,8 @@ TEST(Print, CorrectOutput) {
 
 	num.print(sout);
 	EXPECT_EQ(sout.str(), "7");
-	arr->print(sout);
 	sout.str("");
+	arr->print(sout);
 	EXPECT_EQ(sout.str(), "[3.14, \"cool grapes\", null]");
 	sout.str("");
 	obj->print(sout);
@@ -50,7 +50,6 @@ TEST(Print, CorrectOutput) {
 	sout.str("");
 	bln.print(sout);
 	EXPECT_EQ(sout.str(), "true");
-	sout.str("");
 }
 
 TEST(Clone, CorrectValueClone) {
