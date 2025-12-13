@@ -31,7 +31,7 @@ public:
 	virtual void print() = 0;
 	virtual json::Data clone() = 0;
 
-	virtual bool isNull();
+	virtual bool isNull();  
 	virtual bool isBoolean();
 	virtual bool isNumber();
 	virtual bool isString();

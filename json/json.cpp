@@ -40,72 +40,27 @@ bool json::IData::isObject()
 
 bool& json::IData::getBoolean()
 {
-	if(isBoolean()) {
-		bool def;
-		return def;
-	}
-	try {
-		throw json::TypeError("This object is not a boolean");
-	}
-	catch (std::runtime_error& err) {
-		std::cerr << err.what() << "\n";
-	}
+	throw json::TypeError("This object is not a boolean");
 }
 
 double& json::IData::getNumber()
 {
-	if(isNumber()) {
-		double def;
-		return def;
-	}
-	try {
-		throw json::TypeError("This object is not a number");
-	}
-	catch (std::runtime_error& err) {
-		std::cerr << err.what() << "\n";
-	}
+	throw json::TypeError("This object is not a number");
 }
 
 std::string& json::IData::getString()
 {
-	if(isString()) {
-		std::string def;
-		return def;
-	}
-	try {
-		throw json::TypeError("This object is not a string");
-	}
-	catch (std::runtime_error& err) {
-		std::cerr << err.what() << "\n";
-	}
+	throw json::TypeError("This object is not a string");
 }
 
 json::DataVector& json::IData::getArray()
 {
-	if(isArray()) {
-		json::DataVector def;
-		return def;
-	}
-	try {
-		throw json::TypeError("This object is not a array");
-	}
-	catch (std::runtime_error& err) {
-		std::cerr << err.what() << "\n";
-	}
+	throw json::TypeError("This object is not a array");
 }
 
 json::DataMap& json::IData::getObject()
 {
-	if(isObject()) {
-		json::DataMap def;
-		return def;
-	}
-	try {
-		throw json::TypeError("This object is not a object");
-	}
-	catch (std::runtime_error& err) {
-		std::cerr << err.what() << "\n";
-	}
+	throw json::TypeError("This object is not a object");
 }
 
 std::ostream& operator<<(std::ostream& out, const json::Data& data) {
