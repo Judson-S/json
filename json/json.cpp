@@ -74,7 +74,7 @@ std::ostream& operator<<(std::ostream& out, const json::IData& data) {
 
 json::Data json::toData()
 {
-	return std::make_shared<json::IData>();
+	return std::make_shared<json::Null>();
 }
 
 json::Data json::toData(bool state)
