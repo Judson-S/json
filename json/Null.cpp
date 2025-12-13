@@ -4,11 +4,11 @@ bool json::Null::isNull()
 {
 	return true;
 }
-void print(std::ostream& out)
+void json::Null::print(std::ostream & out)
 {
 	out << "null";
 }
-json::Data clone()
+json::Data json::Null::clone()
 {
 	return std::make_shared<json::Null>();
 }
