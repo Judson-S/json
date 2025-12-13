@@ -12,7 +12,7 @@ bool json::Array::isArray()
 void json::Array::print(std::ostream& out)  const
 {
 	out << "[";
-	for (int i = 0; i < _array.size() - 1; ++i)
+	for (int i = 0; i < _array.size(); ++i)
 	{
 		if(i == _array.size() - 1)
 		{
