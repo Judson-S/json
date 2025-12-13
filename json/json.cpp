@@ -99,5 +99,5 @@ json::Data json::toData(int number)
 
 json::Data json::toData(char const* character)
 {
-	return std::make_shared<json::Number>(character);
+	return std::make_shared<json::String>(character);
 }
