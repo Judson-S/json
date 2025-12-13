@@ -20,7 +20,7 @@ void json::Object::print(std::ostream& out)  const
 		}
 		else
 		{
-			out << quoted(i->first) << ":" << i->second << ",";
+			out << quoted(i->first) << ":" << i->second << ", ";
 		}
 		
 	}
