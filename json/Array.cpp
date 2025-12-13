@@ -12,9 +12,16 @@ bool json::Array::isArray()
 void json::Array::print(std::ostream& out)  const
 {
 	out << "[";
-	for (Data d : _array)
+	for (int i = 0; i < _array.size() - 1; ++i)
 	{
-		out << d << ", ";
+		if(i == _array.size() - 1)
+		{
+			out << _array[i];
+		}
+		else
+		{
+			out << _array[i] << ", ";
+		}
 	}
 	out << "]";
 }
