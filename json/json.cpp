@@ -71,3 +71,23 @@ std::ostream& operator<<(std::ostream& out, const json::IData& data) {
 	out << data;
 	return out;
 }
+
+json::Data json::toData()
+{
+	return std::make_shared<json::IData>();
+}
+
+json::Data json::toData(bool state)
+{
+	return std::make_shared<json::Boolean>(state);
+}
+
+json::Data json::toData(double number)
+{
+	return std::make_shared<json::Number>(number);
+}
+
+json::Data json::toData(std::string string)
+{
+	return std::make_shared<json::String>(string);
+}

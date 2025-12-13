@@ -10,7 +10,7 @@ bool json::Number::isNumber()
 	return true;
 }
 
-json::Data json::Number::print()
+void json::Number::print()
 {
 	std::cout << _number;
 }

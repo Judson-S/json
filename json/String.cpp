@@ -24,8 +24,3 @@ std::string& json::String::getString()
 {
 	return _string;
 }
-
-json::String& json::toData(std::string string)
-{
-	return *(new json::String(string));
-}

@@ -19,7 +19,10 @@ namespace json {
 		TypeError(std::string message) : runtime_error(message) {}
 	};
 
-	Data& toData();
+	Data toData();
+	Data toData(bool);
+	Data toData(double);
+	Data toData(std::string);
 }
 
 class json::IData {
@@ -49,3 +52,5 @@ public:
 private:
 	
 };
+
+#include "types.hpp"
