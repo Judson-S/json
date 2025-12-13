@@ -9,7 +9,7 @@ namespace json {
 
 		bool isBoolean() override;
 
-		Data print() override;
+		void print() override;
 		Data clone() override;
 
 		bool& getBoolean() override;

@@ -9,7 +9,7 @@ bool json::Object::isObject()
 	return true;
 }
 
-json::Data json::Object::print()
+void json::Object::print()
 {
 	std::cout << "{";
 	for (auto i = _object.begin(); i != _object.end(); ++i)

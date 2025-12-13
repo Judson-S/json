@@ -9,7 +9,7 @@ namespace json {
 
 		bool isObject() override;
 
-		Data print() override;
+		void print() override;
 		Data clone() override;
 
 		DataMap& getObject() override;

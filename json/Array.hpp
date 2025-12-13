@@ -9,7 +9,7 @@ namespace json {
 
 		bool isArray() override;
 
-		Data print() override;
+		void print() override;
 		Data clone() override;
 
 		DataVector& getArray() override;

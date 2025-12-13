@@ -10,6 +10,11 @@ bool json::Boolean::isBoolean()
 	return true;
 }
 
+json::Data& json::toData(bool state)
+{
+	return std::make_shared(new json::Boolean(state);
+}
+
 json::Data json::Boolean::print()
 {
 	if (_state)
@@ -20,11 +25,13 @@ json::Data json::Boolean::print()
 	{
 		std::cout << "false";
 	}
+	return toData(_state);
 }
 
 json::Data json::Boolean::clone()
 {
-	Data newBool = toData(this->_state);
+	Data newBool = json::toData(_state);
+	return newBool;
 }
 
 bool& json::Boolean::getBoolean()

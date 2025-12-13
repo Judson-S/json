@@ -19,7 +19,7 @@ namespace json {
 		TypeError(std::string message) : runtime_error(message) {}
 	};
 
-	Data toData();
+	Data& toData();
 }
 
 class json::IData {
@@ -28,7 +28,7 @@ public:
 	IData() = default;
 	virtual ~IData();
 
-	virtual json::Data print() = 0;
+	virtual void print() = 0;
 	virtual json::Data clone() = 0;
 
 	virtual bool isNull();

@@ -9,7 +9,7 @@ namespace json {
 
 		bool isString() override;
 
-		Data print() override;
+		void print() override;
 		Data clone() override;
 
 		std::string& getString() override;

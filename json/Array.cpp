@@ -9,7 +9,7 @@ bool json::Array::isArray()
 	return true;
 }
 
-json::Data json::Array::print()
+void json::Array::print()
 {
 	std::cout << "[";
 	for (Data d : _array)
