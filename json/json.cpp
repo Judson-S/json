@@ -63,11 +63,11 @@ json::DataMap& json::IData::getObject()
 	throw json::TypeError("This object is not a object");
 }
 
-std::ostream& operator<<(std::ostream& out, const json::Data& data) {
+std::ostream& json::operator<<(std::ostream& out, const json::Data& data) {
 	data->print(out);
 	return out;
 }
-std::ostream& operator<<(std::ostream& out, const json::IData& data) {
+std::ostream& json::operator<<(std::ostream& out, const json::IData& data) {
 	data.print(out);
 	return out;
 }
