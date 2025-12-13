@@ -9,14 +9,14 @@ bool json::Array::isArray()
 	return true;
 }
 
-void json::Array::print()
+void json::Array::print(std::ostream& out)
 {
-	std::cout << "[";
+	out << "[";
 	for (Data d : _array)
 	{
-		std::cout << d << ", ";
+		out << d << ", ";
 	}
-	std::cout << "]";
+	out << "]";
 }
 
 json::Data json::Array::clone()

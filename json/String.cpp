@@ -10,9 +10,9 @@ bool json::String::isString()
 	return true;
 }
 
-void json::String::print()
+void json::String::print(std::ostream& out)
 {
-	std::cout << quoted(_string);
+	out << quoted(_string);
 }
 
 json::Data json::String::clone()

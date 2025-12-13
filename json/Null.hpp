@@ -5,9 +5,9 @@
 namespace json {
 	class Null : public IData {
 	public:
-		Null();
+		Null() = default;
 		~Null() override = default;
-		void print() override;
+		void print(std::ostream&) override;
 		json::Data clone() override;
 	private:
 	};

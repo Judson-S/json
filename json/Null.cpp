@@ -1,12 +1,8 @@
 #include "Null.hpp"
 
-json::Null::Null() {
-	Data null = nullptr;
-}
-
-void print()
+void print(std::ostream& out)
 {
-	std::cout << "null";
+	out << "null";
 }
 json::Data clone()
 {

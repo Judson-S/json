@@ -64,7 +64,7 @@ json::DataMap& json::IData::getObject()
 }
 
 std::ostream& operator<<(std::ostream& out, const json::Data& data) {
-	data->print();
+	data->print(out);
 	return out;
 }
 std::ostream& operator<<(std::ostream& out, const json::IData& data) {

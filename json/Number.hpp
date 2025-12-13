@@ -9,7 +9,7 @@ namespace json {
 
 		bool isNumber() override;
 
-		void print() override;
+		void print(std::ostream&) override;
 		Data clone() override;
 
 		double& getNumber() override;

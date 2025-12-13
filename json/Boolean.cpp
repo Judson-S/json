@@ -10,15 +10,15 @@ bool json::Boolean::isBoolean()
 	return true;
 }
 
-void json::Boolean::print()
+void json::Boolean::print(std::ostream& out)
 {
 	if (_state)
 	{
-		std::cout << "true";
+		out << "true";
 	}
 	else
 	{
-		std::cout << "false";
+		out << "false";
 	}
 }
 

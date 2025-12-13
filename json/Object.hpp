@@ -9,7 +9,7 @@ namespace json {
 
 		bool isObject() override;
 
-		void print() override;
+		void print(std::ostream&) override;
 		Data clone() override;
 
 		DataMap& getObject() override;

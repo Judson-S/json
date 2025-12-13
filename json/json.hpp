@@ -31,7 +31,7 @@ public:
 	IData() = default;
 	virtual ~IData();
 
-	virtual void print() = 0;
+	virtual void print(std::ostream&) = 0;
 	virtual json::Data clone() = 0;
 
 	virtual bool isNull();  

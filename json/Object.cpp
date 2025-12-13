@@ -9,14 +9,14 @@ bool json::Object::isObject()
 	return true;
 }
 
-void json::Object::print()
+void json::Object::print(std::ostream& out)
 {
-	std::cout << "{";
+	out << "{";
 	for (auto i = _object.begin(); i != _object.end(); ++i)
 	{
-		std::cout << quoted(i->first) << ":" << i->second;
+		out << quoted(i->first) << ":" << i->second;
 	}
-	std::cout << "}";
+	out << "}";
 }
 
 json::Data json::Object::clone()
