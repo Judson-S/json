@@ -83,7 +83,7 @@ json::DataVector json::IData::getArray() const
 	throw json::TypeError("This object is not a array");
 }
 
-json::DataMap json::IData::getObject() const
+const json::DataMap& json::IData::getObject() const
 {
 	throw json::TypeError("This object is not a object");
 }

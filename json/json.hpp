@@ -58,7 +58,7 @@ public:
 	virtual double getNumber() const;
 	virtual std::string getString() const;
 	virtual json::DataVector getArray() const;
-	virtual json::DataMap getObject() const;
+	virtual const json::DataMap& getObject() const;
 
 	//TODO: overload << operator, make clone logic, move on from there
 

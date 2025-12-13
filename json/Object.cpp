@@ -42,7 +42,7 @@ json::DataMap& json::Object::getObject()
 	return _object;
 }
 
-json::DataMap json::Object::getObject() const
+const json::DataMap& json::Object::getObject() const
 {
 	return _object;
 }
