@@ -91,3 +91,13 @@ json::Data json::toData(std::string string)
 {
 	return std::make_shared<json::String>(string);
 }
+
+json::Data json::toData(int number)
+{
+	return std::make_shared<json::Number>(number);
+}
+
+json::Data json::toData(char const* character)
+{
+	return std::make_shared<json::Number>(character);
+}

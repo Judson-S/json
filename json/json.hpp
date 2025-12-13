@@ -23,6 +23,8 @@ namespace json {
 	Data toData(bool);
 	Data toData(double);
 	Data toData(std::string);
+	Data toData(int);
+	Data toData(char const*);
 }
 
 class json::IData {
