@@ -101,3 +101,13 @@ json::Data json::toData(char const* character)
 {
 	return std::make_shared<json::String>(character);
 }
+
+json::Data json::toData(json::DataVector vector)
+{
+	return std::make_shared<json::Array>(vector);
+}
+
+json::Data json::toData(json::DataMap object)
+{
+	return std::make_shared<json::Object>(object);
+}

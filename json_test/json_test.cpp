@@ -17,7 +17,7 @@ TEST(Constructor, CorrectValue) {
 	EXPECT_TRUE(arr.getArray().empty());
 	EXPECT_TRUE(obj.getObject().empty());
 	EXPECT_EQ(str.getString(), "");
-	EXPECT_EQ(num.getBoolean(), false);
+	EXPECT_EQ(bln.getBoolean(), false);
 
 }
 

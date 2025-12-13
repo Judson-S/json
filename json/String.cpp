@@ -17,7 +17,7 @@ void json::String::print(std::ostream& out)
 
 json::Data json::String::clone()
 {
-	return Data();
+	return std::make_shared<json::String>(json::toData(this->_string));
 }
 
 std::string& json::String::getString()

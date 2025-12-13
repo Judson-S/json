@@ -25,6 +25,8 @@ namespace json {
 	Data toData(std::string);
 	Data toData(int);
 	Data toData(char const*);
+	Data toData(DataVector);
+	Data toData(DataMap);
 }
 
 class json::IData {

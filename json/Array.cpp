@@ -21,7 +21,8 @@ void json::Array::print(std::ostream& out)
 
 json::Data json::Array::clone()
 {
-	return Data();
+	json::Array arrCopy = json::Array(this->_array);
+	return std::make_shared<json::Array>(arrCopy);
 }
 
 json::DataVector& json::Array::getArray()

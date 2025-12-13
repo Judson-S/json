@@ -17,7 +17,7 @@ void json::Number::print(std::ostream& out)
 
 json::Data json::Number::clone()
 {
-	return Data();
+	return std::make_shared<json::Number>(json::toData(this->_number));
 }
 
 double& json::Number::getNumber()
