@@ -63,6 +63,31 @@ json::DataMap& json::IData::getObject()
 	throw json::TypeError("This object is not a object");
 }
 
+bool json::IData::getBoolean() const
+{
+	throw json::TypeError("This object is not a boolean");
+}
+
+double json::IData::getNumber() const
+{
+	throw json::TypeError("This object is not a number");
+}
+
+std::string json::IData::getString() const
+{
+	throw json::TypeError("This object is not a string");
+}
+
+json::DataVector json::IData::getArray() const
+{
+	throw json::TypeError("This object is not a array");
+}
+
+json::DataMap json::IData::getObject() const
+{
+	throw json::TypeError("This object is not a object");
+}
+
 std::ostream& json::operator<<(std::ostream& out, const json::Data& data) {
 	data->print(out);
 	return out;
