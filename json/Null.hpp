@@ -7,7 +7,7 @@ namespace json {
 	public:
 		Null();
 		void print() override;
-		json::Null clone() override;
+		json::Data clone() override;
 	private:
 	};
 }
