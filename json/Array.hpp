@@ -9,7 +9,7 @@ namespace json {
 
 		bool isArray() override;
 
-		void print(std::ostream&) override;
+		void print(std::ostream&) const override;
 		Data clone() override;
 
 		DataVector& getArray() override;

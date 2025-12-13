@@ -9,7 +9,7 @@ bool json::Object::isObject()
 	return true;
 }
 
-void json::Object::print(std::ostream& out)
+void json::Object::print(std::ostream& out)  const
 {
 	out << "{";
 	for (auto i = _object.begin(); i != _object.end(); ++i)

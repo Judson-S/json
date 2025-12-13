@@ -10,7 +10,7 @@ bool json::Boolean::isBoolean()
 	return true;
 }
 
-void json::Boolean::print(std::ostream& out)
+void json::Boolean::print(std::ostream& out) const
 {
 	if (_state)
 	{

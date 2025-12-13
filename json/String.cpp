@@ -10,7 +10,7 @@ bool json::String::isString()
 	return true;
 }
 
-void json::String::print(std::ostream& out)
+void json::String::print(std::ostream& out) const
 {
 	out << quoted(_string);
 }

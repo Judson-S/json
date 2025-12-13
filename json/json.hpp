@@ -27,6 +27,9 @@ namespace json {
 	Data toData(char const*);
 	Data toData(DataVector);
 	Data toData(DataMap);
+
+	std::ostream& operator<<(std::ostream& out, const json::Data& data);
+	std::ostream& operator<<(std::ostream& out, const json::IData& data);
 }
 
 class json::IData {
@@ -35,7 +38,7 @@ public:
 	IData() = default;
 	virtual ~IData();
 
-	virtual void print(std::ostream&) = 0;
+	virtual void print(std::ostream&) const = 0;
 	virtual json::Data clone() = 0;
 
 	virtual bool isNull();  

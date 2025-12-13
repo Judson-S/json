@@ -68,7 +68,7 @@ std::ostream& operator<<(std::ostream& out, const json::Data& data) {
 	return out;
 }
 std::ostream& operator<<(std::ostream& out, const json::IData& data) {
-	out << data;
+	data.print(out);
 	return out;
 }
 

@@ -4,7 +4,7 @@ bool json::Null::isNull()
 {
 	return true;
 }
-void json::Null::print(std::ostream & out)
+void json::Null::print(std::ostream & out)  const
 {
 	out << "null";
 }
