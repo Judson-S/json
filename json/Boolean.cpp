@@ -20,7 +20,6 @@ void json::Boolean::print()
 	{
 		std::cout << "false";
 	}
-	return toData(_state);
 }
 
 json::Data json::Boolean::clone()
