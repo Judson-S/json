@@ -13,6 +13,7 @@ namespace json {
 		Data clone() override;
 
 		DataVector& getArray() override;
+		DataVector getArray() const override;
 
 	private:
 		DataVector _array;

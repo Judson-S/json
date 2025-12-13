@@ -13,6 +13,7 @@ namespace json {
 		Data clone() override;
 
 		double& getNumber() override;
+		double getNumber() const override;
 	private:
 		double _number;
 	};

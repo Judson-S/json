@@ -24,3 +24,8 @@ std::string& json::String::getString()
 {
 	return _string;
 }
+
+std::string json::String::getString() const
+{
+	return _string;
+}

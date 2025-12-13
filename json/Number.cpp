@@ -24,3 +24,7 @@ double& json::Number::getNumber()
 {
 	return _number;
 }
+double json::Number::getNumber() const
+{
+	return _number;
+}

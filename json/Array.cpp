@@ -40,3 +40,7 @@ json::DataVector& json::Array::getArray()
 {
 	return _array;
 }
+json::DataVector json::Array::getArray() const
+{
+	return _array;
+}

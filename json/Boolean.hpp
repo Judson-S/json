@@ -13,6 +13,7 @@ namespace json {
 		Data clone() override;
 
 		bool& getBoolean() override;
+		bool getBoolean() const override;
 	private:
 		bool _state;
 	};

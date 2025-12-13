@@ -14,6 +14,7 @@ namespace json {
 		Data clone() override;
 
 		std::string& getString() override;
+		std::string getString() const override;
 	private:
 		std::string _string;
 	};

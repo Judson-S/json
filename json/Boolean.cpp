@@ -32,3 +32,7 @@ bool& json::Boolean::getBoolean()
 {
 	return _state;
 }
+bool json::Boolean::getBoolean() const
+{
+	return _state;
+}

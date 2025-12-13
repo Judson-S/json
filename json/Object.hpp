@@ -13,6 +13,7 @@ namespace json {
 		Data clone() override;
 
 		DataMap& getObject() override;
+		DataMap getObject() const override;
 	private:
 		DataMap _object;
 	};
