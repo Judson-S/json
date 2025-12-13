@@ -40,7 +40,7 @@ TEST(Print, CorrectOutput) {
 	EXPECT_EQ(sout.str(), "7");
 	sout.str("");
 	arr->print(sout);
-	EXPECT_EQ(sout.str(), "[3.14, \"cool grapes\", null]");
+	EXPECT_EQ(sout.str(), "[3.14,\"cool grapes\",null]");
 	sout.str("");
 	obj->print(sout);
 	EXPECT_EQ(sout.str(), "{\"fee\":\"feeling groovy\",\"fie\":true,\"foe\":98.6}");
