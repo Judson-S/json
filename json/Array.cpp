@@ -20,7 +20,7 @@ void json::Array::print(std::ostream& out)  const
 		}
 		else
 		{
-			out << _array[i] << ", ";
+			out << _array[i] << ",";
 		}
 	}
 	out << "]";

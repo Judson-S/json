@@ -5,6 +5,7 @@ namespace json {
 	public:
 		String() : _string{ "" } {}
 		String(std::string string) : _string{ string } {}
+		String(char const* string) : _string{ string } {}
 		~String();
 
 		bool isString() override;
