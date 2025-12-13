@@ -28,8 +28,12 @@ void json::Array::print(std::ostream& out)  const
 
 json::Data json::Array::clone()
 {
-	json::Array arrCopy = json::Array(this->_array);
-	return std::make_shared<json::Array>(arrCopy);
+	json::Data arrCopy = std::make_shared<json::Array>();
+	for(auto& item : this->_array)
+	{
+		arrCopy->getArray().push_back(item->clone());
+	}
+	return arrCopy;
 }
 
 json::DataVector& json::Array::getArray()

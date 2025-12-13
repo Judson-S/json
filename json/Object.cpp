@@ -29,8 +29,12 @@ void json::Object::print(std::ostream& out)  const
 
 json::Data json::Object::clone()
 {
-	json::Object objCopy = json::Object(this->_object);
-	return std::make_shared<json::Object>(objCopy);
+	json::Data objCopy = std::make_shared<json::Object>();
+	for (auto& pair : this->_object)
+	{
+		objCopy->getObject()[pair.first] = pair.second->clone();
+	}
+	return objCopy;
 }
 
 json::DataMap& json::Object::getObject()
