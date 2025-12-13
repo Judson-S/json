@@ -41,12 +41,12 @@ public:
 	virtual void print(std::ostream&) const = 0;
 	virtual json::Data clone() = 0;
 
-	virtual bool isNull();  
-	virtual bool isBoolean();
-	virtual bool isNumber();
-	virtual bool isString();
-	virtual bool isArray();
-	virtual bool isObject();
+	virtual bool isNull() const;
+	virtual bool isBoolean() const;
+	virtual bool isNumber() const;
+	virtual bool isString() const;
+	virtual bool isArray() const;
+	virtual bool isObject() const;
 
 	virtual bool& getBoolean();
 	virtual double& getNumber();

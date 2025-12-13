@@ -8,32 +8,32 @@ json::IData::~IData()
 
 }
 
-bool json::IData::isNull()
+bool json::IData::isNull() const
 {
 	return false;
 }
 
-bool json::IData::isBoolean()
+bool json::IData::isBoolean() const
 {
 	return false;
 }
 
-bool json::IData::isNumber()
+bool json::IData::isNumber() const
 {
 	return false;
 }
 
-bool json::IData::isString()
+bool json::IData::isString() const
 {
 	return false;
 }
 
-bool json::IData::isArray()
+bool json::IData::isArray() const
 {
 	return false;
 }
 
-bool json::IData::isObject()
+bool json::IData::isObject() const
 {
 	return false;
 }
