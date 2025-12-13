@@ -39,17 +39,18 @@ TEST(Print, CorrectOutput) {
 	num.print(sout);
 	EXPECT_EQ(sout.str(), "7");
 	arr->print(sout);
-	sout.clear();
+	sout.str("");
 	EXPECT_EQ(sout.str(), "[3.14, \"cool grapes\", null]");
-	sout.clear();
+	sout.str("");
 	obj->print(sout);
 	EXPECT_EQ(sout.str(), "{\"fee\":\"feeling groovy\",\"fie\":true,\"foe\":98.6}");
-	sout.clear();
+	sout.str("");
 	str.print(sout);
 	EXPECT_EQ(sout.str(), "\"Hello, world!\"");
-	sout.clear();
+	sout.str("");
 	bln.print(sout);
 	EXPECT_EQ(sout.str(), "true");
+	sout.str("");
 }
 
 TEST(Clone, CorrectValueClone) {
