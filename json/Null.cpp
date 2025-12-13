@@ -8,7 +8,7 @@ void print()
 {
 	std::cout << "null";
 }
-json::Null clone()
+json::Data clone()
 {
-	return this;
+	return std::make_shared<json::Null>();
 }
