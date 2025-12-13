@@ -10,9 +10,9 @@ bool json::Number::isNumber()
 	return true;
 }
 
-void json::Number::print()
+void json::Number::print(std::ostream& out)
 {
-	std::cout << _number;
+	out << _number;
 }
 
 json::Data json::Number::clone()
