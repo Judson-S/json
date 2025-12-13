@@ -7,7 +7,7 @@ namespace json {
 		Number(double state) : _number{ state } {}
 		~Number();
 
-		bool isNumber() override;
+		bool isNumber() const override;
 
 		void print(std::ostream&) const override;
 		Data clone() override;

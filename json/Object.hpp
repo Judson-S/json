@@ -7,7 +7,7 @@ namespace json {
 		Object(DataMap object) : _object{ object } {}
 		~Object();
 
-		bool isObject() override;
+		bool isObject() const override;
 
 		void print(std::ostream&) const override;
 		Data clone() override;

@@ -5,7 +5,7 @@ json::Boolean::~Boolean()
 
 }
 
-bool json::Boolean::isBoolean()
+bool json::Boolean::isBoolean() const
 {
 	return true;
 }

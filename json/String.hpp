@@ -8,7 +8,7 @@ namespace json {
 		String(char const* string) : _string{ string } {}
 		~String();
 
-		bool isString() override;
+		bool isString() const override;
 
 		void print(std::ostream&)  const override;
 		Data clone() override;

@@ -5,7 +5,7 @@ json::String::~String()
 {
 }
 
-bool json::String::isString()
+bool json::String::isString() const
 {
 	return true;
 }

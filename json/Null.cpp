@@ -1,6 +1,6 @@
 #include "Null.hpp"
 
-bool json::Null::isNull()
+bool json::Null::isNull() const
 {
 	return true;
 }

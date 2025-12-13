@@ -7,7 +7,7 @@ namespace json {
 		Boolean(bool state) : _state{ state } {}
 		~Boolean();
 
-		bool isBoolean() override;
+		bool isBoolean() const override;
 
 		void print(std::ostream&) const override;
 		Data clone() override;

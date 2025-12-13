@@ -8,7 +8,7 @@ namespace json {
 		Null() = default;
 		~Null() override = default;
 
-		bool isNull() override;
+		bool isNull() const override;
 		void print(std::ostream&) const override;
 		json::Data clone() override;
 	private:

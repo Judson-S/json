@@ -4,7 +4,7 @@ json::Object::~Object()
 {
 }
 
-bool json::Object::isObject()
+bool json::Object::isObject() const
 {
 	return true;
 }

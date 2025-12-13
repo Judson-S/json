@@ -5,7 +5,7 @@ json::Number::~Number()
 {
 }
 
-bool json::Number::isNumber()
+bool json::Number::isNumber() const
 {
 	return true;
 }

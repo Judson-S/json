@@ -4,7 +4,7 @@ json::Array::~Array()
 {
 }
 
-bool json::Array::isArray()
+bool json::Array::isArray() const
 {
 	return true;
 }

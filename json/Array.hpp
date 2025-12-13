@@ -7,7 +7,7 @@ namespace json {
 		Array(DataVector array) : _array{ array } {}
 		~Array();
 
-		bool isArray() override;
+		bool isArray() const override;
 
 		void print(std::ostream&) const override;
 		Data clone() override;
