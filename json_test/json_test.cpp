@@ -14,7 +14,7 @@ TEST(Constructor, CorrectValue) {
 	json::Boolean bln;
 
 	EXPECT_EQ(num.getNumber(), 0.0);
-	EXPECT_EQ(arr.getArray(), nullptr);
+	EXPECT_TRUE(arr.getArray().empty());
 	EXPECT_TRUE(obj.getObject().empty());
 	EXPECT_EQ(str.getString(), "");
 	EXPECT_EQ(num.getBoolean(), false);
@@ -30,7 +30,14 @@ TEST(Clone, CorrectValueClone) {
 }
 
 TEST(Error, ThrowsTypeError) {
+	json::Null null;
+	json::Number num;
 
+	EXPECT_THROW(null.getBoolean(), json::TypeError);
+	EXPECT_THROW(null.getNumber(), json::TypeError);
+	EXPECT_THROW(null.getString(), json::TypeError);
+	EXPECT_THROW(null.getArray(), json::TypeError);
+	EXPECT_THROW(null.getObject(), json::TypeError);
 }
 
 TEST(Identifiers, CorrectReturn) {
